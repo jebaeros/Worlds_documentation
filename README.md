@@ -60,20 +60,31 @@ Blender is a powerful tool for editing and producing 3D models, multimedia, and 
 #### Let's Get Started:
 
 1. **Download the BLOSM addon** as indicated above.
-   
+
 2. **Open Blender**.
    
-3. Navigate to the **Edit** section.
+   ![Step 2](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/1.png)
 
-4. Select **Preferences**.
+3. Navigate to the **Edit** section and Select **Preferences**.
+   
+   ![Step 4](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/3.png)
 
 5. Go to the **Add-ons** section.
+   
+   ![Step 5](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/4.png)
 
 6. Click on **Install** to add an addon, and navigate to the directory where you downloaded the .zip file.
+   
+   ![Step 6](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/5.png)
 
-7. After doing this, search for 'BLOSM' again in the addons, and you should be able to see the addon as shown in the image.
+7. After doing this, search for 'BLOSM' again in the addons, and you should be able to see the addon as shown in the image, you have to activate the addon clicking on 'import-export:blosm'
+   
+   ![Step 7](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/7.png)
 
 8. **IMPORTANT:** Once BLOSM is downloaded, it is suggested to activate the API keys, as this will be necessary to obtain the different elements required for environment creation. Click on the 'Get it!' option next to each space to enter the API key.
+#### Creating Our First World
+We will now create our first world using two different methods
+####Open street maps method: 
 
 
 
