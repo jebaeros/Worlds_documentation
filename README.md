@@ -57,6 +57,23 @@ Blender is a powerful tool for editing and producing 3D models, multimedia, and 
 - **Simulation**: Simulate various phenomena such as physics, fluids, and particles.
 - **Compositing**: Combine multiple layers and effects to create stunning visuals.
 - **Scripting**: Customize and automate tasks with Python scripting.
+#### Let's Get Started:
+
+1. **Download the BLOSM addon** as indicated above.
+   
+2. **Open Blender**.
+   
+3. Navigate to the **Edit** section.
+
+4. Select **Preferences**.
+
+5. Go to the **Add-ons** section.
+
+6. Click on **Install** to add an addon, and navigate to the directory where you downloaded the .zip file.
+
+7. After doing this, search for 'BLOSM' again in the addons, and you should be able to see the addon as shown in the image.
+
+8. **IMPORTANT:** Once BLOSM is downloaded, it is suggested to activate the API keys, as this will be necessary to obtain the different elements required for environment creation. Click on the 'Get it!' option next to each space to enter the API key.
 
 
 
