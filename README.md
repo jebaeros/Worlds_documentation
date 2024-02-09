@@ -5,3 +5,4 @@ the purpose of this document is to provide you with the different methods, strat
 it should be clarified that this document emphasizes the worlds developed for the gazebo simulation environment, but this does not mean that the generated models or meshes cannot be modified according to other needs.
 ##Get it started
 the following workflow outline presents the order and structure in which the method proposed here should be developed.
+![Workflow Outline](https://github.com/jebaeros/Worlds_documentation/raw/main/metodology.png)
