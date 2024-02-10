@@ -160,12 +160,20 @@ The final step is to obtain the OSM (OpenStreetMap) data and structures. We have
 9. you will get something like this!
 ![Step 4](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/26.png)
 
-AHORA EL SIGUIENTE METODO ES El google 3d tiles, para ello repetiremos los pasos hechos de la siguiente forma:
-1. procura tener tu escena limpia, o limpiala con a y luego suprimir
-2. posterior a ello abre el menu con el atajo control n y busca blosm
-3. luego de ello ve a la seccion de import y selecciona google 3d tiles, deberias ver esta interfaz
-4. donde para hacer uso de este metodo debe haber ingresado la clave api que se solicito en pasos anteriores en la seccion de preferencias, ahora IMPORTANTE: debemos indicar la calidad del tipo mapeado
+## Google 3D Tiles Method
 
+To utilize the Google 3D Tiles method, follow these steps:
 
+1. Ensure your scene is clean or clean it by selecting all elements with 'A' and then deleting them with the 'Delete' key.
+
+2. Open the menu using the shortcut 'Ctrl + N' and search for BLOSM.
+
+3. In the BLOSM interface, navigate to the import section and select 'Google 3D Tiles'. You should see the following interface:
+
+   ![Step 3](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/27.png)
+
+4. Before using this method, ensure you have entered the API key requested in previous steps in the preferences section. Now, **IMPORTANT**: Specify the quality of the mapping type.
+
+Follow these steps to utilize the Google 3D Tiles method effectively.
 
 
