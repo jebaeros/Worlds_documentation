@@ -100,6 +100,26 @@ To obtain the topological mesh of our study section, follow these steps:
    - Click the magnifying glass to search for the zone or city of interest.
    - Alternatively, click 'show selection rectangle' to define the polygon you wish to obtain.
 ![step_1](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/14.png)
-Follow these steps to obtain the topological mesh for your study section.
+when you select your study Area, click import.
+and if you did it well you will get your mesh terrain!.
+
+## Obtaining the Overlay
+
+To obtain the overlay, follow these steps:
+
+1. **Open the Window**: Use the shortcut `N` to open the window again.
+   ![step_1](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/11.png)
+2. **Navigate to Import Section**: Look for 'image overlay' in the import section.
+   ![step_1](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/18.png)
+3. **Adjust Parameters**: In the parameters section, pay attention to the following:
+   - **Overlay Source**: This indicates the source of the texture or satellite image. If you have an API key for ARQGIS, it's the preferred option. Otherwise, you can use other available sources, preferably Mapbox.
+     ![step_1](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/19.png)
+   - **Set Default Material**: Click this option to assign the textures of the overlay to the mesh.
+   - **Save Overlay to File**: Click this option to save the image produced by the overlay to the local folder.
+   - **Max Number of Tiles**: This parameter defines the density or quality of the image, which is your choice.
+Follow these steps to obtain the overlay for your project.
+
+
+
 
 
