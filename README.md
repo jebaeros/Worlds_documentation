@@ -160,5 +160,11 @@ The final step is to obtain the OSM (OpenStreetMap) data and structures. We have
 9. you will get something like this!
 ![Step 4](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/26.png)
 
+AHORA EL SIGUIENTE METODO ES El google 3d tiles, para ello repetiremos los pasos hechos de la siguiente forma:
+1. procura tener tu escena limpia, o limpiala con a y luego suprimir
+2. posterior a ello abre el menu con el atajo control n y busca blosm
+3. luego de ello ve a la seccion de import y selecciona google 3d tiles, deberias ver esta interfaz
+4. donde para hacer uso de este metodo debe haber ingresado la clave api que se solicito en pasos anteriores en la seccion de preferencias, ahora IMPORTANTE: debemos indicar la calidad del tipo mapeado 
+
 
 
