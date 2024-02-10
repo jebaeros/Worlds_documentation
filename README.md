@@ -83,6 +83,7 @@ Blender is a powerful tool for editing and producing 3D models, multimedia, and 
 
 8. **IMPORTANT:** Once BLOSM is downloaded, it is suggested to activate the API keys, as this will be necessary to obtain the different elements required for environment creation. Click on the 'Get it!' option next to each space to enter the API key.
 #### Creating Our First World
-
+Follow this sequence to effectively utilize the Blender BLOSM methodology for environment development.
+![step_1](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/25.png)
 
 
