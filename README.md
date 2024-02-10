@@ -82,8 +82,24 @@ Blender is a powerful tool for editing and producing 3D models, multimedia, and 
    ![Step 7](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/7.png)
 
 8. **IMPORTANT:** Once BLOSM is downloaded, it is suggested to activate the API keys, as this will be necessary to obtain the different elements required for environment creation. Click on the 'Get it!' option next to each space to enter the API key.
-#### Creating Our First World
+## Creating Our First World
 Follow this sequence to effectively utilize the Blender BLOSM methodology for environment development.
 ![step_1](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/25.png)
+### Getting the terrain
+## Obtaining the Topological Mesh
+To obtain the topological mesh of our study section, follow these steps:
+
+1. **Open BLOSM**: Use the shortcut `N` to open the BLOSM addon.
+![step_1](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/11.png)
+2. **Set Import Section to Terrain**: Make sure to change the import section to "terrain" in the BLOSM interface. This layer will provide us with the mesh on which we will work.
+![step_1](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/12.png)
+3. **Update Coordinates**: In the upper part of the window, you'll see a set of coordinates indicating the study section. Click on 'select' to update these coordinates.
+![step_1](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/13.png)
+4. **Select Study Area**: A window will open in your browser, offering two options:
+
+   - Click the magnifying glass to search for the zone or city of interest.
+   - Alternatively, click 'show selection rectangle' to define the polygon you wish to obtain.
+
+Follow these steps to obtain the topological mesh for your study section.
 
 
