@@ -99,7 +99,7 @@ To obtain the topological mesh of our study section, follow these steps:
 
    - Click the magnifying glass to search for the zone or city of interest.
    - Alternatively, click 'show selection rectangle' to define the polygon you wish to obtain.
-
+![step_1](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/14.png)
 Follow these steps to obtain the topological mesh for your study section.
 
 
