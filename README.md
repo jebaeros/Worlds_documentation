@@ -41,22 +41,22 @@ Following this workflow sequence, we'll explore different options and alternativ
 - Up-to-date device drivers
 - Additional storage space for projects and data
 
-### Step 1: Obtain Information
+## Step 1: Obtain Information
 
 The information required for constructing the models includes photogrammetry, models from other creators, satellite images, etc. It's crucial to ensure this data is comprehensive and of the highest quality to avoid errors or degraded experiences. We'll utilize two methods: obtaining images through photogrammetry and obtaining images through GIS tools.
 
-#### GIS Method
+### GIS Method
 
 To perform this method, you'll need the following tools:
 
 - Install [Blender](https://blender.org/) (preferably version 3.6.5).
 - Install the Blender addon from the repository [BLOSM](https://github.com/vvoovv/blosm).
 
-##### About BLOSM:
+#### About BLOSM:
 
 BLOSM is a Blender addon that enables us to utilize APIs for creating 3D geographic or topological models. It offers advanced features such as detailed reliefs, extrusions of structures, and more. Visit the developer's page for further information.
 
-##### About Blender:
+#### About Blender:
 
 Blender is a powerful tool for editing and producing 3D models, multimedia, etc. Its versatility and practicality in editing make it ideal for processing heavy meshes. 
 
@@ -138,15 +138,6 @@ To obtain the overlay, follow these steps:
 
 The final step is to obtain the OSM (OpenStreetMap) data and structures. We have two options for this:
 
-1. **OpenStreetMap Functionality**:
-   - OpenStreetMap provides versatile and user-friendly functions for selecting the type of mapping required.
-   - For more information, you can visit [OpenStreetMap](https://github.com/openstreetmap/).
-   
-2. **Google 3D Tiles API**:
-   - Google 3D Tiles is a powerful paid tool that allows you to obtain high-quality 3D models with textures of structures and buildings.
-   - It utilizes photogrammetry present in Google's database to provide detailed 3D models.
-   - However, it comes with high requirements for downloading, processing, and modifying these meshes.
-
 ### OpenStreetMap Option
 
 #### Steps:
@@ -160,7 +151,7 @@ The final step is to obtain the OSM (OpenStreetMap) data and structures. We have
 9. you will get something like this!
 ![Step 4](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/26.png)
 
-## Google 3D Tiles Method
+### Google 3D Tiles Method
 
 To utilize the Google 3D Tiles method, follow these steps:
 
@@ -174,6 +165,5 @@ To utilize the Google 3D Tiles method, follow these steps:
 
 4. Before using this method, ensure you have entered the API key requested in previous steps in the preferences section. Now, **IMPORTANT**: Specify the quality of the mapping type.
 Follow these steps to utilize the Google 3D Tiles method effectively and get results like this one.
- ![Step 4](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/28.png)
-
+ ![Step 4](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/28.png) 
 
