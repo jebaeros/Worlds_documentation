@@ -45,22 +45,22 @@ Following this workflow sequence, we'll explore different options and alternativ
 
 The information required for constructing the models includes photogrammetry, models from other creators, satellite images, etc. It's crucial to ensure this data is comprehensive and of the highest quality to avoid errors or degraded experiences. We'll utilize two methods: obtaining images through photogrammetry and obtaining images through GIS tools.
 
-### GIS Method
+## GIS Method
 
 To perform this method, you'll need the following tools:
 
 - Install [Blender](https://blender.org/) (preferably version 3.6.5).
 - Install the Blender addon from the repository [BLOSM](https://github.com/vvoovv/blosm).
 
-#### About BLOSM:
+### About BLOSM:
 
 BLOSM is a Blender addon that enables us to utilize APIs for creating 3D geographic or topological models. It offers advanced features such as detailed reliefs, extrusions of structures, and more. Visit the developer's page for further information.
 
-#### About Blender:
+### About Blender:
 
 Blender is a powerful tool for editing and producing 3D models, multimedia, etc. Its versatility and practicality in editing make it ideal for processing heavy meshes. 
 
-#### Let's Get Started:
+### Let's Get Started:
 
 1. **Download the BLOSM addon**.
    
@@ -86,13 +86,13 @@ Blender is a powerful tool for editing and producing 3D models, multimedia, etc.
 
 7. **Activate API Keys**: Once BLOSM is downloaded, activate the API keys by clicking on 'Get it!' next to each space.
 
-## Creating Our First World
+### Creating Our First World
 
 ![Step 1](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/25.png)
 
-### Getting the Terrain
+#### Getting the Terrain
 
-### Obtaining the Topological Mesh
+#### Obtaining the Topological Mesh
 
 To obtain the topological mesh of our study section, follow these steps:
 
@@ -114,7 +114,7 @@ To obtain the topological mesh of our study section, follow these steps:
 
    Import the selected study area to obtain the terrain mesh.
 
-### Obtaining the Overlay
+#### Obtaining the Overlay
 
 To obtain the overlay, follow these steps:
 
@@ -134,7 +134,7 @@ To obtain the overlay, follow these steps:
    
    ![Step 4](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/21.png)
 
-## Obtaining OSM and Structures
+### Obtaining OSM and Structures
 
 The final step is to obtain the OSM (OpenStreetMap) data and structures. We have two options for this:
 
@@ -148,7 +148,7 @@ The final step is to obtain the OSM (OpenStreetMap) data and structures. We have
 6. Specify the types of objects you want to import, such as rails, bodies of water, vegetation, buildings, etc.
 7. Adjust the height levels to determine the size and variation in heights of the buildings.
 8. **IMPORTANT**: Enable options like 'import as single object' and 'relative to initial import'. Also, define a local storage folder. Failure to do so may result in incorrect saving and future export issues in formats such as OBJ, DAE, etc.
-9. you will get something like this!
+9. You will get something like this!
 ![Step 4](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/26.png)
 
 ### Google 3D Tiles Method
@@ -166,4 +166,3 @@ To utilize the Google 3D Tiles method, follow these steps:
 4. Before using this method, ensure you have entered the API key requested in previous steps in the preferences section. Now, **IMPORTANT**: Specify the quality of the mapping type.
 Follow these steps to utilize the Google 3D Tiles method effectively and get results like this one.
  ![Step 4](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/28.png) 
-
