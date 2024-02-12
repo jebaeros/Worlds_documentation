@@ -173,7 +173,7 @@ To utilize the Google 3D Tiles method, follow these steps:
    ![Step 3](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/27.png)
 
 4. Before using this method, ensure you have entered the API key requested in previous steps in the preferences section. Now, **IMPORTANT**: Specify the quality of the mapping type.
-
-Follow these steps to utilize the Google 3D Tiles method effectively.
+Follow these steps to utilize the Google 3D Tiles method effectively and get results like this one.
+ ![Step 4](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/28.png)
 
 
