@@ -292,6 +292,101 @@ You should now be able to visualize the point cloud, which will exhibit various 
 
 This point cloud serves as a foundational element for further analysis, modeling, and simulation within Agisoft.
 
+## Mesh Construction
+
+With the developed point cloud, we must now generate the mesh that will serve for the subsequent export of our file in the required format, as a point cloud alone cannot provide the visual or collision aspects necessary for our model. Let's return to *Workflow* -> *Build Mesh*.
+
+The main parameters are:
+
+- **Quality**: This parameter determines the level of detail and density of the polygonal mesh. Higher quality results in greater definition and density of the mesh.
+
+- **Deep Filtering**: Helps refine the mesh by reducing noise and outliers, resulting in a cleaner and more accurate representation of the environment.
+
+- **Calculate Point Colors**: Enabling this option allows the software to calculate and apply color information to the mesh, enhancing visual realism.
+
+- **Calculate Point Confidence**: This parameter determines the confidence level associated with each point in the mesh, indicating the reliability of its geometry and attributes.
+
+![Mesh Parameters](https://github.com/jebaeros/Worlds_documentation/blob/main/Screenshots/18.png)
+
+After completing this step, we will obtain a result like this:
+
+![Mesh Visualization](https://github.com/jebaeros/Worlds_documentation/blob/main/Screenshots/19.png)
+
+It's important to note that higher quality settings will result in a mesh with greater definition and polygonal density. Remember to visualize the mesh by following the same steps used to view the point cloud: select "Model View" in the upper panel and choose "Mesh" from the available options.
+## Texture Construction
+
+Finally, it is indispensable to construct the texture, as this will add more life and definition to our model. Meshes often distort texture images and may obscure colors, hence the importance of this step.
+
+The parameters for texture construction are as follows:
+
+1. **Texture Type**: Specify the type of texture to be applied to the mesh, such as diffuse, specular, or normal maps.
+
+2. **Source Data**: Choose the source data from which the texture will be generated, such as color images or grayscale maps.
+
+3. **Mapping Mode**: Determine how the texture will be mapped onto the mesh, whether using UV mapping, spherical mapping, or other techniques.
+
+4. **Blending Mode**: Define the blending mode for combining multiple textures or layers, such as additive blending, alpha blending, or overlay blending.
+
+5. **Texture Size/Count**: Set the resolution and number of textures to be applied to the mesh, considering factors like memory usage and rendering performance.
+
+6. **Advanced Settings**: Explore additional options for texture generation and manipulation, such as filtering, compression, or seam removal.
+
+After configuring these parameters, return to the upper panel and select the visualization of the mesh with texture applied.
+
+![Mesh with Texture](https://github.com/jebaeros/Worlds_documentation/blob/main/Screenshots/16.png).
+
+ya con esto en mente contamos con nuestro modelo 3d de nuestro entorno, ahora vienen las operaciones de refinado donde se sugiere que se evalue el caso particular y las necesidades de cada modelo para aplicar cambios ya que cualquier modificacion es irreversible, por lo cual se sugiere guardar en este punto.
+si retornamos al apartado de tools, veremos una ventana de la siguiente forma:
+## Texture Construction
+
+Finally, it is indispensable to construct the texture, as this will add more life and definition to our model. Meshes often distort texture images and may obscure colors, hence the importance of this step.
+
+The parameters for texture construction are as follows:
+
+1. **Texture Type**: Specify the type of texture to be applied to the mesh, such as diffuse, specular, or normal maps.
+
+2. **Source Data**: Choose the source data from which the texture will be generated, such as color images or grayscale maps.
+
+3. **Mapping Mode**: Determine how the texture will be mapped onto the mesh, whether using UV mapping, spherical mapping, or other techniques.
+
+4. **Blending Mode**: Define the blending mode for combining multiple textures or layers, such as additive blending, alpha blending, or overlay blending.
+
+5. **Texture Size/Count**: Set the resolution and number of textures to be applied to the mesh, considering factors like memory usage and rendering performance.
+
+6. **Advanced Settings**: Explore additional options for texture generation and manipulation, such as filtering, compression, or seam removal.
+
+After configuring these parameters, return to the upper panel and select the visualization of the mesh with texture applied.
+
+![Mesh with Texture](https://github.com/jebaeros/Worlds_documentation/blob/main/Screenshots/19.png)
+Where modifications can be made to the elements we have generated, such as point clouds, meshes, or textures. In this case, it is advisable to refine the meshes because there is often a lot of noise or unwanted elements in our mesh that can hinder further processing.
+
+Additionally, we have operations not only for meshes but also for other generated elements. However, it is worth noting that modifying any element implies replicating all the processes that follow the modified element, as it changes its composition and shape.
+
+![Mesh with Texture](https://github.com/jebaeros/Worlds_documentation/blob/main/Screenshots/20.png)
+
+The panel will show us options like this for meshes, where I suggest exploring the Agisoft manual for the various refining and editing options.
+
+### Parameters:
+
+1. **Refine Mesh**: Refines the mesh by optimizing its topology and reducing noise.
+2. **Decimate Mesh**: Reduces the polygon count of the mesh while preserving its overall shape.
+3. **Smooth Mesh**: Applies smoothing algorithms to the mesh surface, reducing roughness.
+4. **Close Holes**: Automatically fills holes in the mesh geometry.
+5. **Colorize Vertices**: Assigns colors to vertices based on texture or other attributes.
+6. **Resize Texture**: Adjusts the resolution or dimensions of the texture applied to the mesh.
+7. **Remove Lighting**: Removes lighting effects from the mesh, allowing for better visualization.
+8. **Generate Mask**: Creates a mask for specific areas of the mesh.
+9. **View Mesh Statistics**: Displays statistical information about the mesh, such as vertex count and surface area.
+10. **View Mesh UV**: Visualizes the UV mapping of the mesh.
+11. **Measure Area and Volume**: Calculates the surface area and volume of the mesh.
+
+Once this is completed, we will export our model in formats such as .obj, .ae, and .stl for simulation:
+
+1. Go to **File** -> **Export**.
+
+![Exporting Model](https://github.com/jebaeros/Worlds_documentation/blob/main/Screenshots/22.png)
+
+This will generate a folder containing metadata, .obj, .ae, and mesh files along with the texture.
 
 
 
