@@ -204,20 +204,97 @@ Upon acquiring the tool from the [Agisoft website](link), users are tasked with 
 ### Navigating Agisoft: Interface and Preferences
 
 Upon launching Agisoft, users are greeted with an intuitive interface, offering a plethora of tools and options for model construction. The primary screen provides a comprehensive view of the project workspace, showcasing the imported images and the evolving 3D model.
-
+![Agisoft Screen](https://github.com/jebaeros/Worlds_documentation/blob/main/Screenshots/1.png)
 #### Exploring the Tools Section
 
 Navigate to the "Tools" section to access a diverse array of functionalities tailored to streamline the photogrammetry workflow. Here, users can initiate critical processes such as image alignment, point cloud generation, and mesh reconstruction, each contributing to the gradual refinement of the final 3D model.
-
+![Agisoft Screen](https://github.com/jebaeros/Worlds_documentation/blob/main/Screenshots/3.png)
 ### Configuring Preferences for Optimal Performance
 
 Before embarking on the photogrammetric journey, it's prudent to configure Agisoft's preferences to align with individual workflow requirements. While these preferences may vary based on personal preference and project specifications, the following recommendations offer a solid foundation for efficient operation:
-
+![Agisoft Screen](https://github.com/jebaeros/Worlds_documentation/blob/main/Screenshots/4.png)
 1. **Language Selection**: Choose your preferred language to ensure seamless interaction with Agisoft's interface.
 2. **Resource Allocation**: Allocate computational resources judiciously, striking a balance between processing power and memory utilization.
 3. **Hardware Specification**: Specify the GPU and CPU dedicated to handling the intricate computations inherent in photogrammetric processing.
 4. **Additional Preferences**: Customize Agisoft's settings to suit your specific workflow, accounting for factors such as file storage location and processing algorithms.
 
-By adhering to these recommendations, users can maximize the efficiency and efficacy of their photogrammetric endeavors, harnessing Agisoft's full potential to craft immersive 3D models with unparalleled fidelity.
+### Loading Image Folder and Initial Setup
 
-![Agisoft Screen](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/1.png)
+To begin, we'll load our image folder into Agisoft by following these steps:
+
+1. **Access the Workflow**: Navigate to the "Workflow" menu and select "Add Folder".
+   
+   ![Add Folder](https://github.com/jebaeros/Worlds_documentation/blob/main/Screenshots/6.png)
+
+2. **Select Image Folder**: Choose the folder containing your images. It's essential to note that our entire workflow revolves around the "Workflow" option, as it provides a sequential guide for constructing our model.
+
+### Understanding Single Camera vs. Dynamic Scene
+
+Upon loading the folder, Agisoft will prompt you to choose between "Single Camera" or "Dynamic Scene". In our case, "Single Camera" is the preferred option since we're working with simplified images without dynamic effects.
+
+After loading the images, you'll notice them displayed in the lower panel, with a preview available in the upper-left panel. This setup enables quick access to individual images and allows for easy navigation during the modeling process.
+
+### Utilizing Markers for Improved Mapping
+
+Markers play a crucial role in enhancing the accuracy of our photogrammetric mapping. To add a marker, follow these steps:
+
+1. **Activate Markers**: Click on the blue flag or the penultimate option in the top toolbar to enable markers.
+   
+   ![Activate Markers](https://github.com/jebaeros/Worlds_documentation/blob/main/Screenshots/16.png)
+
+2. **Add Marker**: Right-click on any image in your image bank and select "Add Marker". Ensure you input the marker's spherical, Cartesian, or other relevant coordinates for precise mapping. Note that this step may be skipped if the images contain metadata.
+
+### Image Processing: Aligning Photos
+
+Once markers are defined, we proceed with image processing by aligning photos. Navigate to the "Workflow" menu and select "Align Photos". You should encounter an interface similar to the following:
+
+![Align Photos](https://github.com/jebaeros/Worlds_documentation/blob/main/Screenshots/10.png)
+
+#### Parameter Definition:
+
+1. **Accuracy**: Determines the precision of reference construction. Higher accuracy implies a longer processing time.
+2. **Generic Preselection**: Utilizes complete AI for point selection.
+3. **Reference Preselection**: Beneficial for sequentially captured images, aiding in smoother processing.
+4. **Advanced Options**: Explore various advanced options such as key points, tie point limit, mask application, exclusion of stationary elements, guided image matching, and adaptive model fitting. Complete AI options are available for enhanced performance.
+
+By carefully defining these parameters, we optimize the alignment process, paving the way for accurate and detailed 3D model reconstruction.
+deberiamos obtener algo asi, donde el align destaca los principales puntos referencia:
+![Align Photos](https://github.com/jebaeros/Worlds_documentation/blob/main/Screenshots/12.png)
+## Building Dense Cloud
+
+In this step, we'll construct our point cloud based on the photo alignment performed earlier. This three-dimensional point cloud provides a detailed representation of the environment, including key vertices and vectors.
+
+### Parameters:
+
+1. **Quality**: This parameter determines the level of detail and accuracy of the point cloud. Higher quality settings result in denser and more precise point clouds, but may also increase processing time. Provide more details.
+
+2. **Deep Filtering**: Deep filtering helps to reduce noise and outliers in the point cloud, resulting in a cleaner and more accurate representation of the scene. Explain further.
+
+3. **Calculate Point Colors**: Enabling this option allows Agisoft to calculate and include color information for each point in the cloud, enhancing visual realism and facilitating subsequent analysis.
+
+4. **Calculate Point Confidence**: This parameter determines the confidence level associated with each point in the cloud, indicating the reliability of its position and attributes. More information.
+
+![Dense Cloud Parameters](https://github.com/jebaeros/Worlds_documentation/blob/main/Screenshots/13.png)
+
+To visualize the point cloud, follow these steps:
+
+1. Select "Model View" in the upper panel to access the model viewing options.
+   
+   ![Model View](https://github.com/jebaeros/Worlds_documentation/blob/main/Screenshots/15.png)
+
+2. Choose "Point Cloud" from the options available in the upper panel.
+   
+   ![Point Cloud View](https://github.com/jebaeros/Worlds_documentation/blob/main/Screenshots/16.png)
+
+You should now be able to visualize the point cloud, which will exhibit various characteristics based on the defined parameters.
+
+![Point Cloud Visualization](https://github.com/jebaeros/Worlds_documentation/blob/main/Screenshots/17.png)
+
+This point cloud serves as a foundational element for further analysis, modeling, and simulation within Agisoft.
+
+
+
+
+
+
+
