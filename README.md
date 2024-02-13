@@ -387,6 +387,247 @@ Once this is completed, we will export our model in formats such as .obj, .ae, a
 ![Exporting Model](https://github.com/jebaeros/Worlds_documentation/blob/main/Screenshots/22.png)
 
 This will generate a folder containing metadata, .mtl, and mesh files along with the texture.
+## Postprocessing with MeshLab
+
+So far, we have covered three fundamental steps in environment construction: obtaining information, processing information, and converting the file to the desired format. Now, we will perform the postprocessing of our model using MeshLab. You can find more information about this tool [here](https://www.meshlab.net).
+
+### Requirements:
+
+- **Operating System**: MeshLab is compatible with Windows, macOS, and Linux.
+- **Hardware**: Ensure your system meets the minimum requirements for running MeshLab effectively. Complete the hardware requirements.
+
+### Functionality of MeshLab:
+
+MeshLab is a powerful open-source tool for processing and editing 3D triangular meshes. Its capabilities include mesh cleaning, repairing, smoothing, simplification, and more.
+
+### Getting Started:
+
+Let's begin the postprocessing process:
+
+1. **Open MeshLab**: Upon opening MeshLab, you should see the main interface. Navigate to the main panel and go to `File` -> `Import Mesh`. Locate the folder where you downloaded your mesh and select the mesh file.
+
+   ![meshlab](https://github.com/jebaeros/Worlds_documentation/blob/main/meshlab/1.png)
+
+2. **Model Navigation**: After importing the model, you should see something similar to this – your 3D model with a sphere or wheel axis that allows you to navigate and visualize your model.
+
+   ![meshlab](https://github.com/jebaeros/Worlds_documentation/blob/main/meshlab/2.png)
+
+3. **Lighting and Shading Options**: In the lower right panel, you should be able to see the lighting and shading options. These options modify the textures and how you view the mesh. 
+
+   - **Light Vertices**: Illuminates vertices of the mesh.
+   - **Light Faces**: Illuminates faces of the mesh.
+   - **Light Both**: Illuminates both vertices and faces of the mesh.
+   - **Flat Shading**: Applies flat shading to the mesh.
+   - **Smooth Shading**: Applies smooth shading to the mesh.
+
+   ![meshlab](https://github.com/jebaeros/Worlds_documentation/blob/main/meshlab/3.png)
+
+4. **Toolbar Exploration**: Explore the toolbar located at the top, which contains various options for mesh processing and editing. Each function has its purpose. 
+
+   ![meshlab](https://github.com/jebaeros/Worlds_documentation/blob/main/meshlab/4.png)
+
+5. **Render Options**: In the toolbar, you will find the "Render" option, which includes various rendering options. Enumerate and describe each one.
+
+   - **Shaders**: Selects different shading modes for the mesh.
+   - **Background Grid**: Toggles the visibility of the background grid.
+   - **Show Axis**: Displays the reference axis in the scene.
+   - **Show Box Corners**: Displays the bounding box corners.
+   - **Show Current Mesh**: Highlights the current mesh.
+   - **Show Camera**: Displays the camera in the scene.
+   - **Show Normal**: Visualizes the normals of the mesh.
+   - **Show UV Tex Param**: Displays UV texture parameterization.
+   - **Show Vertex Quality Histogram**: Shows a histogram of vertex quality.
+   - **Show Face Quality Histogram**: Shows a histogram of face quality.
+   - **Show Quality Contour**: Displays quality contours on the mesh.
+   - **Show Curvature**: Visualizes curvature information.
+   - **Show Labels**: Displays labels on mesh elements.
+   - **Rasters-to-geometry reprojection**: Converts rasters to geometry.
+   - **Enable shadow mapping**: Enables shadow mapping for the scene.
+   - **Enable Screen Space Ambient Occlusion**: Applies ambient occlusion to the scene.
+
+   ![meshlab](https://github.com/jebaeros/Worlds_documentation/blob/main/meshlab/5.png)
+
+6. **View Options**: Similarly, the "View" option in the toolbar contains various viewing options. Enumerate and describe each one.
+
+   - **FullScreen**: Switches to full-screen mode.
+   - **Show Layer Dialog**: Displays the layer dialog for managing layers.
+   - **Show Current Raster Mode**: Shows the current raster mode.
+   - **Show Trackball**: Displays the trackball for navigation.
+   - **Reset Trackball**: Resets the trackball orientation.
+   - **Toggle Orthographic Camera**: Switches between orthographic and perspective cameras.
+   - **Show Info Panel**: Displays the information panel.
+   - **ToolBars**: Toggles the visibility of toolbars.
+   - **Alt+Return**: Toggles full-screen mode.
+   - **Ctrl+L**: Locks the current view.
+   - **Shift+R**: Resets the camera view.
+   - **Shift+H**: Hides the selected elements.
+   - **Ctrl+H**: Hides unselected elements.
+
+   ![meshlab](https://github.com/jebaeros/Worlds_documentation/blob/main/meshlab/6.png)
+
+7. **Window Options**: The "Window" option in the toolbar contains various window management options. Enumerate and describe each one.
+
+   - **Close All Windows**: Closes all open windows.
+   - **Tile**: Arranges windows in a tiled layout.
+   - **Cascade**: Cascades windows.
+   - **Next**: Switches to the next window.
+   - **Split current view**: Splits the current view.
+   - **Close current view**: Closes the current view.
+   - **Link Viewers**: Links multiple viewers together.
+   - **View from**: Sets the view from a specific perspective.
+   - **Trackball step**: Specifies the trackball step.
+   - **Read camera settings from file**: Reads camera settings from a file.
+   - **Save camera settings to file**: Saves camera settings to a file.
+   - **View from Mesh Camera**: Sets the view from the mesh camera.
+   - **View from Raster Camera**: Sets the view from the raster camera.
+   - **Ctrl+)**: Sets the view from the raster camera.
+   - **Copy camera settings to clipboard**: Copies camera settings to the clipboard.
+   - **Paste clipboard to camera settings**: Pastes clipboard to camera settings.
+   - **1.Project**: Specifies project settings.
+
+   ![meshlab](https://github.com/jebaeros/Worlds_documentation/blob/main/meshlab/7.png)
+
+8. **Tools Options**: Lastly, the "Tools" option in the toolbar contains various mesh processing tools. Enumerate and describe each one.
+
+   - **Apply filter**: Applies a filter to the mesh.
+   - **Show current filter script**: Displays the current filter script.
+   - **Selection**: Allows selection of mesh elements.
+   - **Cleaning and Repairing**: Tools for cleaning and repairing mesh errors.
+   - **Create New Mesh Layer**: Creates a new mesh layer.
+   - **Remeshing, Simplification and Reconstruction**: Tools for remeshing, simplification, and reconstruction.
+   - **Polygonal and Quad Mesh**: Tools for generating polygonal and quad meshes.
+   - **Color Creation and Processing**: Tools for creating and processing colors on the mesh.
+   - **Smoothing, Fairing and Deformation**: Tools for smoothing, fairing, and deforming the mesh.
+   - **Quality Measure and Computations**: Tools for measuring quality and computing mesh properties.
+   - **Normals, Curvatures and Orientation**: Tools for calculating normals, curvatures, and orientation of the mesh.
+   - **Mesh Layer**: Options for managing mesh layers.
+   - **Raster Layer**: Options for managing raster layers.
+   - **Range Map**: Tools for handling range maps.
+   - **Point Set**: Options for managing point sets.
+   - **Sampling**: Tools for sampling mesh data.
+   - **Texture**: Tools for texture mapping.
+   - **Camera**: Tools for managing camera settings.
+   - **Other**: Miscellaneous tools.
+
+   ![meshlab](https://github.com/jebaeros/Worlds_documentation/blob/main/meshlab/8.png)
+9. **Main Options**:
+   - **Merge Close Vertices**: Merges vertices that are close to each other.
+   - **Merge Wedge Texture Coord**: Merges texture coordinates for wedged faces.
+   - **Remove Duplicate Faces**: Deletes duplicate faces from the mesh.
+   - **Remove Duplicate Vertices**: Removes duplicate vertices from the mesh.
+   - **Remove Isolated Folded Faces by Edge Flip**: Removes isolated folded faces by flipping edges.
+   - **Remove Isolated Pieces (wrt Diameter)**: Deletes isolated mesh pieces based on diameter.
+   - **Remove Isolated Pieces (wrt Face Num.)**: Deletes isolated mesh pieces based on face count.
+   - **Remove T-Vertices**: Eliminates T-vertices from the mesh.
+   - **Remove Unreferenced Vertices**: Deletes vertices that are not referenced by any faces.
+   - **Remove Vertices wrt Quality**: Removes vertices based on quality criteria.
+   - **Remove Zero Area Faces**: Deletes faces with zero area.
+   - **Repair Non-Manifold Edges**: Fixes non-manifold edges in the mesh.
+   - **Repair Non-Manifold Vertices by Splitting**: Repairs non-manifold vertices by splitting.
+   - **Select Self-Intersecting Faces**: Highlights self-intersecting faces in the mesh.
+   - **Snap Mismatched Borders**: Aligns mismatched borders by snapping.
+
+   ![clean and repairing](https://github.com/jebaeros/Worlds_documentation/blob/main/meshlab/9.png)
+
+10. **Remeshing, Simplification, and Reconstruction**:
+    - **Alpha Complex/Shape**: 
+        - Enumerate and describe the function.
+    - **Alpha Wrap**: 
+        - Enumerate and describe the function.
+    - **Build a Polyline from Selected Edges**: 
+        - Enumerate and describe the function.
+    - **Close Holes**: 
+        - Enumerate and describe the function.
+    - **Convex Hull**: 
+        - Enumerate and describe the function.
+    - **Create Solid Wireframe**: 
+        - Enumerate and describe the function.
+    - **Cubic Stylization**: 
+        - Enumerate and describe the function.
+    - **Curvature Flipping Optimization**: 
+        - Enumerate and describe the function.
+    - **Cut Mesh along Crease Edges**: 
+        - Enumerate and describe the function.
+    - **Generate Scalar Harmonic Field**: 
+        - Enumerate and describe the function.
+    - **Global Align Meshes**: 
+        - Enumerate and describe the function.
+    - **ICP Between Meshes**: 
+        - Enumerate and describe the function.
+    - **Iso Parametrization Build Atlased Mesh**: 
+        - Enumerate and describe the function.
+    - **Iso Parametrization Remeshing**: 
+        - Enumerate and describe the function.
+    - **Iso Parametrization Transfer between Meshes**: 
+        - Enumerate and describe the function.
+    - **Iso Parametrization: Main**: 
+        - Enumerate and describe the function.
+    - **Make Mesh Developable**: 
+        - Enumerate and describe the function.
+    - **Marching Cubes (APSS)**: 
+        - Enumerate and describe the function.
+    - **Marching Cubes (RIMLS)**: 
+        - Enumerate and describe the function.
+    - **Mesh Boolean: Difference**: 
+        - Enumerate and describe the function.
+    - **Mesh Boolean: Intersection**: 
+        - Enumerate and describe the function.
+    - **Mesh Boolean: Symmetric Difference (XOR)**: 
+        - Enumerate and describe the function.
+    - **Mesh Boolean: Union**: 
+        - Enumerate and describe the function.
+    - **Planar Flipping Optimization**: 
+        - Enumerate and describe the function.
+    - **Points Cloud Movement**: 
+        - Enumerate and describe the function.
+    - **Refine User-Defined**: 
+        - Enumerate and describe the function.
+    - **Remeshing: Isotropic Explicit Remeshing**: 
+        - Enumerate and describe the function.
+    - **Select Crease Edges**: 
+        - Enumerate and describe the function.
+    - **Simplification: Clustering Decimation**: 
+        - Enumerate and describe the function.
+    - **Simplification: Edge Collapse for Marching Cube meshes**: 
+        - Enumerate and describe the function.
+    - **Simplification: Quadric Edge Collapse Decimation**: 
+        - Enumerate and describe the function.
+    - **Simplification: Quadric Edge Collapse Decimation (with texture)**: 
+        - Enumerate and describe the function.
+    - **Subdivision Surfaces: Butterfly Subdivision**: 
+        - Enumerate and describe the function.
+    - **Subdivision Surfaces: Catmull-Clark**: 
+        - Enumerate and describe the function.
+    - **Subdivision Surfaces: Doo Sabin**: 
+        - Enumerate and describe the function.
+    - **Subdivision Surfaces: LS3 Loop**: 
+        - Enumerate and describe the function.
+    - **Subdivision Surfaces: Loop**: 
+        - Enumerate and describe the function.
+    - **Subdivision Surfaces: Midpoint**: 
+        - Enumerate and describe the function.
+    - **Surface Reconstruction: Ball Pivoting**: 
+        - Enumerate and describe the function.
+    - **Surface Reconstruction: Screened Poisson**: 
+        - Enumerate and describe the function.
+    - **Surface Reconstruction: VCG**: 
+        - Enumerate and describe the function.
+    - **Tri to Quad by 4-8 Subdivision**: 
+        - Enumerate and describe the function.
+    - **Tri to Quad by Smart Triangle Pairing**: 
+        - Enumerate and describe the function.
+    - **Turn into Quad-Dominant mesh**: 
+        - Enumerate and describe the function.
+    - **Turn into a Pure-Triangular mesh**: 
+        - Enumerate and describe the function.
+    - **Uniform Mesh Resampling**: 
+        - Enumerate and describe the function.
+    - **Vertex Attribute Seam Voronoi Filtering**: 
+        - Enumerate and describe the function.
+
+   ![remeshing, simplification, and reconstruction](https://github.com/jebaeros/Worlds_documentation/blob/main/meshlab/10.png)
+
+When you finish editing your model, remember to export the file to a different folder or subfolder within your working directory to avoid conflicts with previous files.
 
 
 
