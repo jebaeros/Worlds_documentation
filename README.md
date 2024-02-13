@@ -629,6 +629,75 @@ Let's begin the postprocessing process:
 
 When you finish editing your model, remember to export the file to a different folder or subfolder within your working directory to avoid conflicts with previous files.
 
+## Collision Model Definition Using Instant Meshes
+
+In this phase, we will define collisions for our model or environment. For this purpose, we'll utilize Instant Meshes, a powerful tool known for its capability to edit heavy models and simplify meshes without compromising their main characteristics and shapes.
+
+### What is Instant Meshes?
+
+Instant Meshes is a software tool designed for mesh processing and editing. It allows users to manipulate 3D models efficiently, particularly focusing on mesh simplification and remeshing tasks. Instant Meshes is widely used in various industries such as game development, 3D animation, and architectural visualization.
+
+### Requirements for Instant Meshes:
+- Operating System: Windows, macOS, Linux
+- Processor: Intel Core i5 or equivalent
+- RAM: 8 GB minimum
+- Graphics Card: OpenGL 3.3 compatible
+- Disk Space: 500 MB for installation
+
+### Getting Started with Instant Meshes:
+
+1. Open Instant Meshes and you'll be greeted with the following interface:
+   ![instantmesh](https://github.com/jebaeros/Worlds_documentation/blob/main/instantmeshes/1.png)
+
+2. Explore the menu options which include:
+   - **Open mesh:** Allows you to import a mesh file.
+   - **Advanced settings:** Provides additional configuration options for remeshing.
+   - **Remesh as Quads:** Specifies the remeshing mode.
+   - **Configuration details:** Displays detailed settings for the remeshing process.
+   - **Extrinsic:** Adjusts mesh alignment.
+   - **Align to boundaries:** Aligns mesh to boundaries.
+   - **Sharp creases:** Preserves sharp creases in the mesh.
+   - **Target vertex count:** Sets the desired number of vertices.
+   - **Orientation field/Position field:** Tools for modifying mesh orientation and position.
+   - **Solve:** Initiates the remeshing process.
+   - **Export mesh:** Allows you to save the edited mesh.
+
+   ![instantmesh](https://github.com/jebaeros/Worlds_documentation/blob/main/instantmeshes/2.png)
+
+3. The advanced options panel includes the following functions:
+   - **Current state:** Indicates the current status of the mesh.
+   - **Reset/Load/Save:** Operations for resetting, loading, and saving mesh configurations.
+   - **Visualize:** Visualization options for the mesh.
+   - **Hierarchy level:** Adjusts the mesh hierarchy.
+   - **Automatic:** Enables automatic settings.
+   - **Crease angle:** Defines the angle for preserving sharp edges.
+   - **Render layers:** Options for rendering mesh layers.
+   - **Input mesh:** Specifies the input mesh file.
+   - **Face IDs/Vertex IDs:** Displays identification information for mesh elements.
+   - **Orientation field/Position field:** Tools for manipulating mesh orientation and position.
+   - **Output mesh:** Indicates the output mesh file.
+
+   ![instantmesh](https://github.com/jebaeros/Worlds_documentation/blob/main/instantmeshes/4.png)
+
+4. After importing the model, ensure to view it from the top without textures:
+   ![instantmesh](https://github.com/jebaeros/Worlds_documentation/blob/main/instantmeshes/3.png)
+
+5. Finally, after editing the mesh using the above options, navigate to the ### Export Options:
+
+- **Mesh settings:** This section allows you to configure various mesh properties before exporting. You can adjust parameters such as mesh density, smoothing iterations, and other mesh-related settings.
+
+- **Pure quad mesh:** Specifies whether the exported mesh should consist of pure quadrilateral elements.
+
+- **Smoothing iterations:** Determines the number of iterations applied to smooth the mesh surface during export.
+
+- **Actions:** Provides additional actions you can perform before exporting the mesh. This may include extracting a specific part of the mesh or showing the output mesh.
+
+- **Extract mesh:** This action allows you to extract a specific portion of the mesh before exporting it. It's useful for isolating certain parts of the model for export.
+
+- **Show output:** Displays the output mesh in the preview window to ensure that the exported mesh appears as expected.
+
+- **Save:** Initiates the export process and saves the edited mesh to the specified file location. You can choose the file format and adjust export settings as needed before saving.
+   ![instantmesh](https://github.com/jebaeros/Worlds_documentation/blob/main/instantmeshes/5.png)
 
 
 
