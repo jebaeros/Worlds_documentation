@@ -166,3 +166,58 @@ To utilize the Google 3D Tiles method, follow these steps:
 4. Before using this method, ensure you have entered the API key requested in previous steps in the preferences section. Now, **IMPORTANT**: Specify the quality of the mapping type.
 Follow these steps to utilize the Google 3D Tiles method effectively and get results like this one.
  ![Step 4](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/28.png) 
+## Agisoft Method: Creating 3D Models with Photogrammetry
+
+### Introduction
+
+In this section, we'll delve into the Agisoft method, a robust tool for generating 3D models through photogrammetry. Before we begin, let's ensure we meet the following minimum requirements:
+
+- **Hardware Requirements**:
+  - Processor: Quad-core or higher
+  - Memory (RAM): 8 GB or more
+  - Graphics Card: Dedicated GPU with at least 2 GB VRAM
+  - Storage: SSD with 128 GB of free space
+- **Software Requirements**:
+  - Operating System: Ubuntu 18.04 LTS or higher, or Windows 10
+  - Blender: Latest stable version
+  - Gazebo: xxx
+  - ROS: xxx
+  - Agisoft: 1.17
+- **Other Requirements**:
+  - Internet connection for software installation
+  - Up-to-date device drivers
+  - Additional storage space for projects and data
+
+### Understanding Agisoft's Functionality
+
+Agisoft serves as a powerful ally in the realm of photogrammetry, enabling the creation of intricate 3D models from a collection of photographs. Its algorithm meticulously analyzes the spatial relationships between images, reconstructing surfaces and structures with remarkable accuracy. This functionality empowers users to capture the essence of real-world objects and environments, opening avenues for diverse applications in fields ranging from architecture to archaeology.
+
+#### Leveraging Agisoft's Features
+
+Upon acquiring the tool from the [Agisoft website](link), users are tasked with assembling a repository of photographs capturing the desired subject from various angles. For optimal results, these images should meet the following criteria:
+
+1. **Quality Assurance**: Ensure the images are of high quality, free from blurriness or distortion.
+2. **Metadata Enrichment**: Whenever feasible, include metadata to enhance the accuracy of spatial reconstruction.
+3. **Sequential Alignment**: Capture photos in a sequential manner to facilitate the alignment process within Agisoft.
+4. **Consistency in Lighting**: Maintain consistency in lighting conditions to minimize discrepancies in texture and color reproduction.
+
+### Navigating Agisoft: Interface and Preferences
+
+Upon launching Agisoft, users are greeted with an intuitive interface, offering a plethora of tools and options for model construction. The primary screen provides a comprehensive view of the project workspace, showcasing the imported images and the evolving 3D model.
+
+#### Exploring the Tools Section
+
+Navigate to the "Tools" section to access a diverse array of functionalities tailored to streamline the photogrammetry workflow. Here, users can initiate critical processes such as image alignment, point cloud generation, and mesh reconstruction, each contributing to the gradual refinement of the final 3D model.
+
+### Configuring Preferences for Optimal Performance
+
+Before embarking on the photogrammetric journey, it's prudent to configure Agisoft's preferences to align with individual workflow requirements. While these preferences may vary based on personal preference and project specifications, the following recommendations offer a solid foundation for efficient operation:
+
+1. **Language Selection**: Choose your preferred language to ensure seamless interaction with Agisoft's interface.
+2. **Resource Allocation**: Allocate computational resources judiciously, striking a balance between processing power and memory utilization.
+3. **Hardware Specification**: Specify the GPU and CPU dedicated to handling the intricate computations inherent in photogrammetric processing.
+4. **Additional Preferences**: Customize Agisoft's settings to suit your specific workflow, accounting for factors such as file storage location and processing algorithms.
+
+By adhering to these recommendations, users can maximize the efficiency and efficacy of their photogrammetric endeavors, harnessing Agisoft's full potential to craft immersive 3D models with unparalleled fidelity.
+
+![Agisoft Screen](https://github.com/jebaeros/Worlds_documentation/blob/main/gis%20method/1.png)
