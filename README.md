@@ -386,7 +386,7 @@ Once this is completed, we will export our model in formats such as .obj, .ae, a
 
 ![Exporting Model](https://github.com/jebaeros/Worlds_documentation/blob/main/Screenshots/22.png)
 
-This will generate a folder containing metadata, .obj, .ae, and mesh files along with the texture.
+This will generate a folder containing metadata, .mtl, and mesh files along with the texture.
 
 
 
