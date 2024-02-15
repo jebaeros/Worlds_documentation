@@ -759,9 +759,73 @@ The `model.config` file is essential for Gazebo to recognize and interact with t
 - Author: Provides information about the creator of the model, including name and email.
 - Description: Offers a brief description of the model, providing insights into its purpose and characteristics.
 
-## model.sdf
-el model.sdf es igual o mas importante que el model.config porque aqui se definiran todas las caracteristicas propias del modelo como fisicas, caracteristicas del modelo y demas, encontraras mas info en la pagina de formato sdf compartida mas arriba, pero sin embargo analizaremos la estructura del model.sdf y veremos un ejemplo relacionado con el flujo de trabajo que hemos llevado.
-(Describe y muestra la plantilla del model.sdf y cada uno de sus componentes)
+## Model SDF
+
+The `model.sdf` file is equally or more important than the `model.config` as it defines all the specific characteristics of the model such as physics, model features, and more. While you can find more information on the SDF format [here](http://sdformat.org/spec?ver=1.11&elem=sdf), let's analyze the structure of the `model.sdf` and see an example related to the workflow we've been following.
+
+``` xml
+<model>
+  <!-- Required -->
+  <name>My Model Name</name> <!-- string: Specifies the unique identifier for the model -->
+  <!-- Optional -->
+  <canonical_link></canonical_link> <!-- string: Specifies the name of the model's canonical link -->
+  <placement_frame></placement_frame> <!-- string: Specifies the frame inside this model whose pose will be set by the pose element of the model -->
+  <static>false</static> <!-- bool: If set to true, the model is immovable -->
+  <self_collide>false</self_collide> <!-- bool: If set to true, all links in the model will collide with each other -->
+  <allow_auto_disable>true</allow_auto_disable> <!-- bool: Allows a model to auto-disable -->
+  <!-- Nested Elements -->
+  <include>
+    <!-- Required -->
+    <uri></uri> <!-- string: URI to a resource, such as a model -->
+    <!-- Optional -->
+    <name></name> <!-- string: Override the name of the included model -->
+    <static>false</static> <!-- bool: Override the static value of the included model -->
+    <placement_frame></placement_frame> <!-- string: Specifies the frame inside the included model whose pose will be set by the specified pose element -->
+    <pose relative_to=""></pose> <!-- pose: Specifies a pose expressed in the frame named by relative_to -->
+    <plugin>
+      <!-- Required -->
+      <filename></filename> <!-- string: Name of the shared library to load -->
+      <!-- Arbitrary Elements -->
+    </plugin>
+  </include>
+  <pose relative_to=""></pose> <!-- pose: Specifies a pose expressed in the frame named by relative_to -->
+  <!-- Nested Elements -->
+  <plugin>
+    <!-- Required -->
+    <filename></filename> <!-- string: Name of the shared library to load -->
+    <!-- Arbitrary Elements -->
+  </plugin>
+  <model>
+    <!-- Required -->
+    <name></name> <!-- string: A unique name for the model -->
+    <!-- Nested Elements -->
+  </model>
+  <enable_wind>false</enable_wind> <!-- bool: If set to true, all links in the model will be affected by the wind -->
+  <frame>
+    <!-- Required -->
+    <name></name> <!-- string: Name of the frame -->
+    <!-- Optional -->
+    <attached_to></attached_to> <!-- string: Specifies the frame to which this frame is attached -->
+    <pose relative_to=""></pose> <!-- pose: Specifies a pose expressed in the frame named by relative_to -->
+  </frame>
+  <!-- Nested Elements -->
+  <link>
+    <!-- Required -->
+    <!-- Nested Elements -->
+  </link>
+  <!-- Nested Elements -->
+  <joint>
+    <!-- Required -->
+    <!-- Nested Elements -->
+  </joint>
+  <!-- Nested Elements -->
+  <gripper>
+    <!-- Required -->
+    <name></name> <!-- string: Specifies the name of the gripper -->
+    <!-- Nested Elements -->
+  </gripper>
+</model>
+
 
 
 
