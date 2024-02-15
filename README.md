@@ -825,7 +825,9 @@ The `model.sdf` file is equally or more important than the `model.config` as it 
     <!-- Nested Elements -->
   </gripper>
 </model>
-
+```
+With this in mind, it's at the discretion of each developer or model creator to define the parameters. In our scenario, dealing with meshes encompassing all elements as environments, they typically remain static without mobility or inertia properties. However, the situation becomes more intriguing when defining dynamic or mobile robots or other elements.
+ ##
 
 
 
