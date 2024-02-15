@@ -313,30 +313,7 @@ After completing this step, we will obtain a result like this:
 ![Mesh Visualization](https://github.com/jebaeros/Worlds_documentation/blob/main/Screenshots/19.png)
 
 It's important to note that higher quality settings will result in a mesh with greater definition and polygonal density. Remember to visualize the mesh by following the same steps used to view the point cloud: select "Model View" in the upper panel and choose "Mesh" from the available options.
-## Texture Construction
 
-Finally, it is indispensable to construct the texture, as this will add more life and definition to our model. Meshes often distort texture images and may obscure colors, hence the importance of this step.
-
-The parameters for texture construction are as follows:
-
-1. **Texture Type**: Specify the type of texture to be applied to the mesh, such as diffuse, specular, or normal maps.
-
-2. **Source Data**: Choose the source data from which the texture will be generated, such as color images or grayscale maps.
-
-3. **Mapping Mode**: Determine how the texture will be mapped onto the mesh, whether using UV mapping, spherical mapping, or other techniques.
-
-4. **Blending Mode**: Define the blending mode for combining multiple textures or layers, such as additive blending, alpha blending, or overlay blending.
-
-5. **Texture Size/Count**: Set the resolution and number of textures to be applied to the mesh, considering factors like memory usage and rendering performance.
-
-6. **Advanced Settings**: Explore additional options for texture generation and manipulation, such as filtering, compression, or seam removal.
-
-After configuring these parameters, return to the upper panel and select the visualization of the mesh with texture applied.
-
-![Mesh with Texture](https://github.com/jebaeros/Worlds_documentation/blob/main/Screenshots/16.png).
-
-ya con esto en mente contamos con nuestro modelo 3d de nuestro entorno, ahora vienen las operaciones de refinado donde se sugiere que se evalue el caso particular y las necesidades de cada modelo para aplicar cambios ya que cualquier modificacion es irreversible, por lo cual se sugiere guardar en este punto.
-si retornamos al apartado de tools, veremos una ventana de la siguiente forma:
 ## Texture Construction
 
 Finally, it is indispensable to construct the texture, as this will add more life and definition to our model. Meshes often distort texture images and may obscure colors, hence the importance of this step.
