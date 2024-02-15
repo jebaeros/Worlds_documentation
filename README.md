@@ -699,33 +699,43 @@ Instant Meshes is a software tool designed for mesh processing and editing. It a
 - **Save:** Initiates the export process and saves the edited mesh to the specified file location. You can choose the file format and adjust export settings as needed before saving.
    ![instantmesh](https://github.com/jebaeros/Worlds_documentation/blob/main/instantmeshes/5.png)
 
-finalmente nuestro antepenultimo paso es construir el sdf(header)
+## Constructing the SDF Header
 
-a este punto deberias contar con los siguientes archivos:
-1. mesh principal(obj, stl o dae)
-2. un mesh simplificado para las colisiones (obj,stl o dae)
-3. un archivo para texturas(.png o .jpg)
-4. un archivo mtl (Define la funcion de un archivo mtl)
+At this stage, we're ready to construct the SDF (Simulation Description Format) header for our model. Before diving into the SDF format, let's ensure we have all the necessary files prepared:
 
-con esto claro ahora deberemos entender como funcion un archivo sdf y cual sera la estructura que deben seguir nuestros archivos para ser reconocibles por gazebo.
-(Define que es un archivo sdf, como funciona y pon este link de referencia que lleva a una pagina que explican el formato http://sdformat.org/spec?ver=1.11&elem=sdf)
-En una carpeta debera organizar los datos de la siguiente forma y preferiblemente tener en cuenta las siguientes condiciones:
-1. definir el nombre del modelo que estamos desarrollando con referencia al nombre del mesh principal
-2. no modificar ni cambiar los nombres del mtl, del mesh de colisiones o las texturas, ya que si realiza esto debera modificar el codigo interno de estos archivos para volver a indicar la ruta local de los archivos con los cuales tiene relacion
-3. la estructura debe ser la siguiente:donde asumiremos que nuestro mesh tiene por nombre '12block' y la carpeta del modelo debera tener un nombre unico, por lo cual por motivos practicos haremos que el nombre del mesh principal sea el mismo para la carpeta, ejemplo: (indica que hace cada uno)
-   12block
-   -model.config
-   -model.sdf
-   -meshes
-   --12block.obj
-   --12block.mtl
-   --12block.png
-   --collisions.obj
-o podemos verlo mas claramente en esta imagen (Aca pondre una imagen)
+1. **Main Mesh**: This file represents the primary geometry of our model and can be in formats such as obj, stl, or dae.
+2. **Collision Mesh**: An additional mesh, simplified for collision detection purposes. It should also be in obj, stl, or dae format.
+3. **Texture File**: A file containing textures for our model, typically in png or jpg format.
+4. **MTL File**: The Material Template Library file defines material properties such as color, texture, and shading.
+
+With these files in place, we'll now explore the structure of an SDF file and how it ensures compatibility with Gazebo, a widely used robotics simulation environment.
+
+### Understanding the SDF Format
+
+The SDF file serves as a comprehensive description of our model's physical characteristics within Gazebo. It defines attributes such as geometry, collisions, visual appearance, physical properties, and more. For detailed specifications, refer to the [SDF specification documentation](http://sdformat.org/spec?ver=1.11&elem=sdf).
+
+### Folder Organization
+
+To ensure seamless integration with Gazebo, our files should be organized systematically. Here's how we should structure our model's directory:
+
+1. **Model Name**: Choose a unique name for your model, typically derived from the main mesh's name for clarity and consistency.
+2. **model.config**: This configuration file is vital for Gazebo to recognize our model. It contains metadata such as the model's name, version, author details, and a brief description.
+3. **model.sdf**: The SDF file specifies the model's properties, including its geometry, collisions, visuals, and physical characteristics.
+4. **meshes**: This directory holds all mesh-related files.
+   - **12block.obj**: The main mesh file.
+   - **12block.mtl**: Material file defining surface properties for the main mesh.
+   - **12block.png**: Texture file used for the main mesh.
+   - **collisions.obj**: The simplified collision mesh.
+
+By adhering to this structure and naming conventions, we ensure that Gazebo can accurately interpret and render our model within the simulation environment.
+o podemos verlo mas claramente en esta imagen:
+
 como podemos ver aparecen dos nuevos archivos el model config y el model.sdf
-model config(header)
-el model.config tiene la siguiente extructura y es indispensable para que el gazebo pueda reconocer el archivo que este este presente, IMPORTANTE el model.config no se le puede cambiar el nombre (da razones), sabido esto analicemos la estructura del model.config
-(Analizala y describe la funcion de cada componente)
+## Understanding Model Configuration: model.config
+
+The `model.config` file is essential for Gazebo to recognize and interact with the associated model effectively. It serves as a key component in defining various attributes and metadata of the model. Let's analyze and describe the function of each component within the structure of the `model.config` file:
+
+```xml
 <?xml version="1.0"?>
 
 <model>
@@ -742,6 +752,12 @@ el model.config tiene la siguiente extructura y es indispensable para que el gaz
     A description of the model
   </description>
 </model>
+```
+- Name: Specifies the unique identifier for the model.
+- Version: Indicates the version number of the model.
+- SDF: Points to the filename of the associated SDF (Simulation Description Format) file, which provides detailed - specifications of the model.
+- Author: Provides information about the creator of the model, including name and email.
+- Description: Offers a brief description of the model, providing insights into its purpose and characteristics.
 model.sdf(header)
 el model.sdf es igual o mas importante que el model.config porque aqui se definiran todas las caracteristicas propias del modelo como fisicas, caracteristicas del modelo y demas, encontraras mas info en la pagina de formato sdf compartida mas arriba, pero sin embargo analizaremos la estructura del model.sdf y veremos un ejemplo relacionado con el flujo de trabajo que hemos llevado.
 (Describe y muestra la plantilla del model.sdf y cada uno de sus componentes)
