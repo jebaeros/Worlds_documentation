@@ -827,7 +827,44 @@ The `model.sdf` file is equally or more important than the `model.config` as it 
 </model>
 ```
 With this in mind, it's at the discretion of each developer or model creator to define the parameters. In our scenario, dealing with meshes encompassing all elements as environments, they typically remain static without mobility or inertia properties. However, the situation becomes more intriguing when defining dynamic or mobile robots or other elements.
- ##
+ 
+## Uploading the Process to Gazebo Fuel
+
+To upload our model to Gazebo Fuel, follow these organized steps:
+
+### 1. Access Gazebo Website
+
+Navigate to the Gazebo website and locate the "app" button in the top right corner.
+
+### 2. Log In or Register
+
+If you haven't already, log in to your Gazebo account or register for a new one.
+
+### 3. Navigate to Models
+
+On the left-hand sidebar, select the "models" option to access the models section.
+
+### 4. Upload Model
+
+In the models section, click on the "+" button located in the top right corner. Then, select "model" from the dropdown menu.
+
+### 5. Fill in Model Information
+
+A form will appear where you'll need to provide information about your model:
+   - **Model Name:** Enter the name of your model, consistent with the name defined in the folder containing the files and the name indicated in the model.config.
+   - **Description:** Provide a brief description of your model.
+   - **Tags:** Add relevant tags to help categorize your model.
+   - **Upload Files:** Upload the files or preferably the entire folder containing your model files.
+
+### 6. Submit and Wait
+
+Once you've filled in all the necessary information and uploaded your files, click the submit button. Your model will then be uploaded to Gazebo Fuel.
+
+### What is Gazebo Fuel?
+
+Gazebo Fuel is a repository where users can share and discover models, worlds, plugins, and other simulation assets for use in the Gazebo simulation environment. It provides a centralized platform for the Gazebo community to collaborate and access a wide range of simulation resources.
+
+
 
 
 
