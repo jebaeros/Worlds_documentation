@@ -699,6 +699,52 @@ Instant Meshes is a software tool designed for mesh processing and editing. It a
 - **Save:** Initiates the export process and saves the edited mesh to the specified file location. You can choose the file format and adjust export settings as needed before saving.
    ![instantmesh](https://github.com/jebaeros/Worlds_documentation/blob/main/instantmeshes/5.png)
 
+finalmente nuestro antepenultimo paso es construir el sdf(header)
+
+a este punto deberias contar con los siguientes archivos:
+1. mesh principal(obj, stl o dae)
+2. un mesh simplificado para las colisiones (obj,stl o dae)
+3. un archivo para texturas(.png o .jpg)
+4. un archivo mtl (Define la funcion de un archivo mtl)
+
+con esto claro ahora deberemos entender como funcion un archivo sdf y cual sera la estructura que deben seguir nuestros archivos para ser reconocibles por gazebo.
+(Define que es un archivo sdf, como funciona y pon este link de referencia que lleva a una pagina que explican el formato http://sdformat.org/spec?ver=1.11&elem=sdf)
+En una carpeta debera organizar los datos de la siguiente forma y preferiblemente tener en cuenta las siguientes condiciones:
+1. definir el nombre del modelo que estamos desarrollando con referencia al nombre del mesh principal
+2. no modificar ni cambiar los nombres del mtl, del mesh de colisiones o las texturas, ya que si realiza esto debera modificar el codigo interno de estos archivos para volver a indicar la ruta local de los archivos con los cuales tiene relacion
+3. la estructura debe ser la siguiente:donde asumiremos que nuestro mesh tiene por nombre '12block' y la carpeta del modelo debera tener un nombre unico, por lo cual por motivos practicos haremos que el nombre del mesh principal sea el mismo para la carpeta, ejemplo: (indica que hace cada uno)
+   12block
+   -model.config
+   -model.sdf
+   -meshes
+   --12block.obj
+   --12block.mtl
+   --12block.png
+   --collisions.obj
+o podemos verlo mas claramente en esta imagen (Aca pondre una imagen)
+como podemos ver aparecen dos nuevos archivos el model config y el model.sdf
+model config(header)
+el model.config tiene la siguiente extructura y es indispensable para que el gazebo pueda reconocer el archivo que este este presente, IMPORTANTE el model.config no se le puede cambiar el nombre (da razones), sabido esto analicemos la estructura del model.config
+(Analizala y describe la funcion de cada componente)
+<?xml version="1.0"?>
+
+<model>
+  <name>My Model Name</name>
+  <version>1.0</version>
+  <sdf version='1.5'>model.sdf</sdf>
+
+  <author>
+    <name>My name</name>
+    <email>name@email.address</email>
+  </author>
+
+  <description>
+    A description of the model
+  </description>
+</model>
+model.sdf(header)
+el model.sdf es igual o mas importante que el model.config porque aqui se definiran todas las caracteristicas propias del modelo como fisicas, caracteristicas del modelo y demas, encontraras mas info en la pagina de formato sdf compartida mas arriba, pero sin embargo analizaremos la estructura del model.sdf y veremos un ejemplo relacionado con el flujo de trabajo que hemos llevado.
+(Describe y muestra la plantilla del model.sdf y cada uno de sus componentes)
 
 
 
