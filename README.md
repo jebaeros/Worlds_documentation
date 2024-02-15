@@ -728,9 +728,9 @@ To ensure seamless integration with Gazebo, our files should be organized system
    - **collisions.obj**: The simplified collision mesh.
 
 By adhering to this structure and naming conventions, we ensure that Gazebo can accurately interpret and render our model within the simulation environment.
-o podemos verlo mas claramente en esta imagen:
+or we can see it more clearly in this image:
 
-como podemos ver aparecen dos nuevos archivos el model config y el model.sdf
+as we can see two new files appear the model config and the model.sdf, which we will explain next and you will have to program in your code editor of preference.
 ## Understanding Model Configuration: model.config
 
 The `model.config` file is essential for Gazebo to recognize and interact with the associated model effectively. It serves as a key component in defining various attributes and metadata of the model. Let's analyze and describe the function of each component within the structure of the `model.config` file:
@@ -758,7 +758,8 @@ The `model.config` file is essential for Gazebo to recognize and interact with t
 - SDF: Points to the filename of the associated SDF (Simulation Description Format) file, which provides detailed - specifications of the model.
 - Author: Provides information about the creator of the model, including name and email.
 - Description: Offers a brief description of the model, providing insights into its purpose and characteristics.
-model.sdf(header)
+
+## model.sdf
 el model.sdf es igual o mas importante que el model.config porque aqui se definiran todas las caracteristicas propias del modelo como fisicas, caracteristicas del modelo y demas, encontraras mas info en la pagina de formato sdf compartida mas arriba, pero sin embargo analizaremos la estructura del model.sdf y veremos un ejemplo relacionado con el flujo de trabajo que hemos llevado.
 (Describe y muestra la plantilla del model.sdf y cada uno de sus componentes)
 
